@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO app</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.8"></script>
+</head>
+<body>
+    <div id="app">
+        <div class="container">
+            <div class="content">
+                <div class="head">
+                    <h1>TO-DO app</h1>
+                    <input class="textArea" type="text" :value="text">
+                    <div class="head__btn">
+                        <button @click="addItem">ADD</button>
+                        <button @click="clearItem">CLEAR</button>
+                    </div>
+                </div>
+                <div class="elements" v-show="array.length > 0">
+                    <ul>
+                        <li class="listitem" v-for="item in array" @click="redBack(array.indexOf(item))">{{item}}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

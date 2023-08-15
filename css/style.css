@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Play", sans-serif;
+  list-style-type: none;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #283d3b;
+  max-width: 100%;
+  width: 100%;
+  height: 100vh;
+}
+
+li {
+  cursor: poiner;
+  border: 2px solid grey;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+li:not(:first-child) {
+  margin-top: 10px;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  max-width: 720px;
+  border-radius: 10px;
+  padding: 20px;
+  -webkit-box-shadow: 0 0 10px #3ad6c8;
+          box-shadow: 0 0 10px #3ad6c8;
+  background-color: #2a968c;
+}
+
+.head h1 {
+  font-size: 32px;
+  color: white;
+}
+
+.head input {
+  margin-top: 100px;
+  padding: 10px 5px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.head__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+}
+
+.head__btn button {
+  padding: 10px 20px;
+  border: 2px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.elements {
+  min-width: 300px;
+  width: 100%;
+  height: 300px;
+  margin-left: 30px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  -webkit-box-shadow: 0 0 5px white;
+          box-shadow: 0 0 5px white;
+  overflow-y: scroll;
+}
